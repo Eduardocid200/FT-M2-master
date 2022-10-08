@@ -1,0 +1,22 @@
+body{
+  margin-top: 2rem;}
+.Nav{
+  width: 100%;
+  display: flex;
+  padding: auto;
+  align: center;
+}
+.Box{
+  background-color: black;
+  display: block;
+  border:  gray;
+  
+
+}
+.Logo{
+  padding: 6px;
+}
+.Texto{
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

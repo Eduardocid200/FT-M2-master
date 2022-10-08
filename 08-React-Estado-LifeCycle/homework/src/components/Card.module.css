@@ -1,0 +1,37 @@
+h3{
+   color: white;
+   background-color:  gray;
+   border-radius: 50px 0px 0px 0px;
+   border: 20px solid gray;
+ 
+ }
+ .btnC{
+    background-color:#9eccea ;
+    float: right;
+    border: orangered;
+ }
+ .temp{
+    margin-top: 35px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    
+   
+ }
+ .caja{
+    
+    border-radius: 50px 0px 50px 50px;
+   background-color:  black;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    margin: 15px;
+ }
+ .btnC:hover{
+    background-color: #2a296a;
+    color: black;
+ }
+ .p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+ }

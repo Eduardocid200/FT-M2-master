@@ -1,0 +1,44 @@
+.container {
+   background-color: aqua;
+    width: 350px;
+    border: 2px 10px solid gray;
+    border-radius: 15px;
+    font-size: large;
+    font-style: italic;
+    font-family: fantasy;
+    margin-top: 35px;
+    width: 400px;
+    height: 260px;
+    
+  
+    
+    
+}
+.grid { 
+   display: flex;
+    justify-content:space-around;
+    background-color: aqua;
+font-family: fantasy;
+margin-top: 15px;
+
+}
+
+.btnClose {
+    float : right;
+    background-color: red;
+    color: black;
+    border: 1 px solid darkred;
+    border-radius: 3px;
+    margin: 10px;
+    
+}
+
+.btnClose:hover {
+    background-color : darkred;
+    color : black
+    
+} 
+.max{
+    margin-right: 15px;
+    margin-top: 0px;
+}

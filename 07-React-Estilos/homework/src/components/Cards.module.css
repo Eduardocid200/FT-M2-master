@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 2px;
+    width: auto;
+    height: auto    ;
+
+    
+}
+.search{
+    background-color: aqua;
+    
+}
+    
+

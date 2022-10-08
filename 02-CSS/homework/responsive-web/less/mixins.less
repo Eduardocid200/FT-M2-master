@@ -1,0 +1,22 @@
+// Mixins acá
+ 
+.boton (@colordefondo, @colordeletra ){
+    border-radius: 10px;
+    background-color: @colordefondo;
+    font-size: 20px;
+    text-align: center;
+    height: 35px;
+    width: fit-content;
+    color: @colordeletra
+   }
+.btn-registrate{
+    .boton(@btn-bg-color, @wild-sand); 
+} 
+
+.btn-registrate:hover {
+    .boton(@wild-sand, @btn-bg-color)
+
+}
+.phone{ 
+@max-width : 500px;
+}

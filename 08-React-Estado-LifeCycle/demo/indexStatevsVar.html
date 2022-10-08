@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Henry - State vs Var</title>
+</head>
+
+<body>
+  <div id='app'></div>
+
+  <script crossorigin src="https://unpkg.com/react@16.8/umd/react.development.js" ></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.8/umd/react-dom.development.js" ></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <script type="text/babel">
+
+ class StateContador extends React.Component{
+   constructor(props) {  // props son parámetros que le voy a pasar al onstructor
+     super(props);      // Esto extiende de React.Component
+     this.state = {               // El objeto this.state define un estado interno a un componente
+                                  // Aquí se declaran los valores que quiero q tenga el estado
+      contador: this.props.contador   // contador es una propiedad de this.state que va a tener en esa instancia de ejecución
+      }
+      this.variable = this.props.contador
+      /*
+      this.incrementoContador= this.incrementoContador.bind(this);   // Esto hace que se bindee el contador, se debe hacer si no se usa func flecha
+      }
+      incrementoContador(cuento) {
+        this.variable++
+        console.log("Soy contador ", this.variable)*/
+      }
+    onButtonClick = () => {      //Esta arrow f, dice q cada vez que se haga click en el botón se va a renderizar el contador y sumar 1
+      this.setState((state) => {                    // hace cambios al estado del componente y le dice a React que este componente y 
+                                                   //sus elementos secundarios deben volverse a procesar con el estado actualizado
+          return {contador: state.contador + 1}     //El return muestra el cambio de estado del contador
+     });
+      console.log("Actualicé mi state :", this.state.contador)    
+    }
+    
+   
+    
+    render(){       // Se ejecuta cada vez que hago un onClick modificando el contardor que se muestra en pantalla
+      return (
+        <div>          
+          <h1>State vs Variable Contador</h1>
+          <div><button onClick={this.onButtonClick}>Suma uno!</button>
+            &nbsp;Hola, soy el State {this.state.contador}!!
+            </div>
+            <div>
+            <p>Variable contador: {this.variable}</p>
+            <button onClick={this.incrementoContador}>Incrementa!</button>  
+            </div>
+            </div>
+            )
+    }
+  };
+
+  ReactDOM.render(<StateContador contador={0} />, document.getElementById('app'));
+  </script>
+</body>
+
+</html>
